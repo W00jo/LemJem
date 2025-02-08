@@ -2,24 +2,24 @@ extends Area2D
 
 @onready var ray = $RayCast2D
 
-var curr_pos = [576,576]
+var curr_pos = [952,928]
 var dir_right = Vector2(1,0)
 var dir_left = Vector2(-1,0)
 
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("move_right"):
-		ray.target_position = (dir_right * 128)
+		ray.target_position = (dir_right * 100)
 		ray.force_raycast_update()
 		if !ray.is_colliding():
-			curr_pos[0] += 128
+			curr_pos[0] += 192
 	
 	elif event.is_action_pressed("move_left"):
 
-		ray.target_position = (dir_left * 128)
+		ray.target_position = (dir_left * 100)
 		ray.force_raycast_update()
 		if !ray.is_colliding():
-			curr_pos[0] -= 128
+			curr_pos[0] -= 192
 			 
 	self.position = Vector2(curr_pos[0], curr_pos[1])
 	

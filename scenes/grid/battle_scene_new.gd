@@ -10,9 +10,10 @@ var projectile = preload("res://scenes/grid/projectile.tscn")
 
 func _ready() -> void:
 	$TimerPlayer.start()
+	$TimerEnemy.start()
 
 func _on_timer_player_timeout() -> void:
-	$TimerEnemy.start()
+	#$TimerEnemy.start()
 	# Tworzenie pocisku
 	var new_projectile = projectile.instantiate()
 	bullets.add_child(new_projectile)

@@ -51,7 +51,7 @@ shadow_enabled = true
 environment = SubResource("Environment_04q0b")
 
 [node name="EnemyFP" parent="Gameplay/Levels/Level1" instance=ExtResource("2_nkk0e")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.4301, 0.75423, -96.5442)
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 58.4301, 0.382245, -96.5442)
 
 [node name="FogVolume" type="FogVolume" parent="Gameplay/Levels/Level1"]
 size = Vector3(10, 2, 2)
